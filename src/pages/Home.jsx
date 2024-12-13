@@ -1,9 +1,10 @@
 export default function Home() {
-  return <main className="text-white bg-teal-700 h-screen max-h-screen p-20">
-    <h1 className="uppercase text-center font-bold text-3xl text-white">Register account</h1>
+  return <main className="h-screen max-h-screen p-20 text-white bg-teal-700">
+    <h1 className="text-3xl font-bold text-center text-white uppercase">Register account</h1>
 
-    <form className="capitalize max-w-4xl  mx-auto">
+    <form className="max-w-4xl mx-auto capitalize">
       <div >
+ 
         <label htmlFor="username">username</label>
         <input className="w-full rounded-lg" type="text" name="username" id="username" />
       </div>
@@ -19,7 +20,7 @@ export default function Home() {
         <label htmlFor="fakultas">fakultas</label>
         <input className="w-full rounded-lg" type="text" name="fakultas" id="fakultas" />
       </div>
-      <div aria-label="dua-kolom" className="flex gap-2  " >
+      <div aria-label="dua-kolom" className="flex gap-2 " >
         <section aria-label="kiri " className="grow">
           <div>
             <label htmlFor="jurusan">jurusan</label>
@@ -50,8 +51,8 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="  p-4 flex justify-center items-start">
-        <button type="submit" className="font-bold bg-orange-500 rounded-full py-1 px-3">Register</button>
+      <div className="flex items-start justify-center p-4 ">
+        <button type="submit" className="px-3 py-1 font-bold bg-orange-500 rounded-full">Register</button>
       </div>
     </form>
   </main>
