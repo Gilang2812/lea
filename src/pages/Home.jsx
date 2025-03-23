@@ -1,12 +1,16 @@
+
 export default function Home() {
+
+
+
+
   return <main className="h-screen max-h-screen p-20 text-white bg-teal-700">
     <h1 className="text-3xl font-bold text-center text-white uppercase">Register account</h1>
-
+    <p> hitung </p>
     <form className="max-w-4xl mx-auto capitalize">
       <div >
- 
         <label htmlFor="username">username</label>
-        <input className="w-full rounded-lg" type="text" name="username" id="username" />
+        <input className="w-full rounded-lg" type="text" name="pengiring" id="username" />
       </div>
       <div>
         <label htmlFor="name">name</label>
@@ -50,10 +54,10 @@ export default function Home() {
           </div>
         </section>
       </div>
-
       <div className="flex items-start justify-center p-4 ">
         <button type="submit" className="px-3 py-1 font-bold bg-orange-500 rounded-full">Register</button>
       </div>
     </form>
   </main>
+
 }

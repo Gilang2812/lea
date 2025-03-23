@@ -1,25 +1,44 @@
 import { FaCaretDown, FaUser } from "react-icons/fa6";
 import { Aside } from "../components/Aside";
- 
-export default function Dashboard() { 
+
+
+export default function Dashboard() {
+  //ini tempat javascript 
+  //fetch akan mengambil respon dari API atau backend
+  //mengembalikan promise
+  //pada fetch, kita harus menangani error saat request gagal
+  //menggunakan try-catch block
+  //akan menjalankan kode di blok try jika request berhasil
+  //akan menjalankan kode di blok catch jika request gagal
+  //hooks 
+  //useEffect 
+  //useState 
+  //useRef == hampir sama dengan document.getElementById
+
+
+
+  
+  const test = import.meta.env.URL
+  console.log(test)
+
 
   return (
     <main className="flex h-screen">
-  
-    
+
+
       {/* layout bagian kiri */}
-        <Aside />
+      <Aside />
 
       {/* layput bagian kanan */}
       <section className="flex-1 pb-8">
-        
+
         <header className="bg-white p-4 grow flex justify-end px-24 shadow mb-7 ">
 
-            <button className="flex items-center gap-2 ">
-                <FaUser/> 
-                <FaCaretDown />
-            </button>
-   
+          <button className="flex items-center gap-2 ">
+            <FaUser />
+            <FaCaretDown />
+          </button>
+
         </header>
 
         {/* <!-- bagian halo selamat datang --> */}
@@ -32,6 +51,7 @@ export default function Dashboard() {
               <br />
               menyurat anda
             </h2>
+
           </div>
 
           <div className="pr-16">
@@ -46,27 +66,27 @@ export default function Dashboard() {
 
         {/* 2 box surat masuk dan keluar */}
         <div className=" flex justify-evenly   ">
-            <div className="px-4 bg-amber-100 rounded-md font-bold p-2  text-md "> 
+          <div className="px-4 bg-amber-100 rounded-md font-bold p-2  text-md ">
             Total Surat Masuk
-                <div className= "flex flex-row justify-center items-center gap-8 mt-2">
-                <p className="text-xl flex items-center">
-                
-                </p>
-                
-                <h2 className="text-xl flex items-center">0</h2>
-                </div>
+            <div className="flex flex-row justify-center items-center gap-8 mt-2">
+              <p className="text-xl flex items-center">
+
+              </p>
+
+              <h2 className="text-xl flex items-center">0</h2>
             </div>
-            
-            <div className="px-4 bg-blue-100 rounded-md font-bold p-2 text-md "> 
+          </div>
+
+          <div className="px-4 bg-blue-100 rounded-md font-bold p-2 text-md ">
             Total Surat Keluar
-                <div className= "pb-5 flex flex-row justify-center items-center gap-8 mt-2">
-                <p className="text-xl flex items-center">
-                
-                </p>
-                
-                <h2 className="text-xl flex items-center">0</h2>
-                </div>
+            <div className="pb-5 flex flex-row justify-center items-center gap-8 mt-2">
+              <p className="text-xl flex items-center">
+
+              </p>
+
+              <h2 className="text-xl flex items-center">0</h2>
             </div>
+          </div>
         </div>
       </section>
     </main>
